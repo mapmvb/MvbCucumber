@@ -8,7 +8,7 @@ Feature: Shout feature
 
   Scenario: Listener is within range
   scenario description
-    Given Lucy is in 14 m from Sean
+    Given Alice is in 14 m from Sean
     When Sean shouts 'Free bagels'
     Then Lucy hears Sean message
 
@@ -18,6 +18,11 @@ Feature: Shout feature
     But Lucy is hungry
     When Sean shouts 'Free bagels'
     Then Lucy hears Sean message
+
+  Scenario: Listener is out of range 1
+    Given Kate is in 20 m from Sean
+    When Sean shouts 'Free bagels'
+    Then Lucy not hear Sean message
 
   Scenario: Listener is within range 2
     Given Lucy is in 20 m from Sean
