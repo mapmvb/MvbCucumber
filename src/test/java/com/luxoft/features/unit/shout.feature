@@ -1,3 +1,4 @@
+@Shout
 Feature: Shout feature
   here can be link to Jira
   or just feature description
@@ -6,6 +7,7 @@ Feature: Shout feature
   Background: background
     Given show how background works
 
+    @tag1 @tag2
   Scenario: Listener is within range
   scenario description
     Given Alice is in 14 m from Sean
@@ -19,11 +21,13 @@ Feature: Shout feature
     When Sean shouts 'Free bagels'
     Then Lucy hears Sean message
 
+    @tag1
   Scenario: Listener is out of range 1
     Given Kate is in 20 m from Sean
     When Sean shouts 'Free bagels'
     Then Lucy not hear Sean message
 
+      @tag2
   Scenario: Listener is within range 2
     Given Lucy is in 20 m from Sean
     Given Lucy is hungry
