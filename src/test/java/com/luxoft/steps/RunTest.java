@@ -11,11 +11,11 @@ import org.junit.runner.RunWith;
         glue = "com.luxoft.steps",
 //        tags = "@Shout and not @tag1",
 //        tags = "@tag1 or tag2".
-        tags = "@web",
+        tags = "@search",
         dryRun = false,
         monochrome = false,
         plugin = {"pretty",
-                "html:target/cucumber-reports/cucumber-pretty",
+                "html:target/cucumber-reports/cucumber-pretty.html",
                 "json:target/cucumber5.json"}
 )
 public class RunTest {

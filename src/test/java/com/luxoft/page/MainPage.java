@@ -42,6 +42,9 @@ public class MainPage extends CommonPage {
 //            Assertions.fail("element "+ name + " not found at the page");
             return null;
         }
+//        YandexSearchPage.openPage(driver).typePageQuery("test request").pressEnter().getSearchTitle();
         return obj;
     }
+
+
 }
